@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #f7dce9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.page {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+
+.page.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.card {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 28px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 340px;
+  position: relative;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.emoji {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.btn {
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+  position: relative;
+}
+
+.yes {
+  background: #ff6fa5;
+  color: white;
+}
+
+.yes:hover {
+  transform: scale(1.1);
+}
+
+.no {
+  background: #ccc;
+  color: #333;
+  position: absolute;
+}
+
+.gif {
+  width: 200px;
+  margin-top: 15px;
+}
+
+#confetti {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
